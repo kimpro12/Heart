@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+  <head>
+    <title>New Document</title>
+
+    <meta name="Generator" content="EditPlus" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="Author" content="" />
+
+    <meta name="Keywords" content="" />
+
+    <meta name="Description" content="" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+
+        padding: 0;
+
+        margin: 0;
+
+        background: #000;
+      }
+      canvas {
+        position: absolute;
+        width: 100%;
+
+        height: 100%;
+      }
+      .text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-transform: none;
+        font-family: "Dancing Script", cursive;
+      }
+      .customer {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .customer input {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 12px 24px;
+        font-size: 25px;
+      }
+      .customer button {
+        font-size: 25px;
+      }
+      .customer.hide {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="pinkboard"></canvas>
+    <!-- <h2 style="color: #fff;">yêu em</h2> -->
+    <div class="text"></div>
+    <div class="customer">
+      <input type="text" placeholder="màu của trái tim" id="color-heart" />
+      <input type="text" placeholder="màu của chữ" id="color-text" />
+      <input type="text" placeholder="cỡ chữ" id="font-text" />
+      <input type="text" placeholder="nội dung chữ" id="content-text" />
+      <button onclick="setting()">run nèoo</button>
+    </div>
+
+    <script src="./controls.js"></script>
+  </body>
+</html>
